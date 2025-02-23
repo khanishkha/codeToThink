@@ -9,7 +9,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## Code scaffolding
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-## CLONE THE PROJECT INTO YOUR LOCAL
+## Clone the project
 Create an folder,open terminal in the same folder then
 Run git clone <<http url of this project>>
 
