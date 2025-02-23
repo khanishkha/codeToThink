@@ -12,6 +12,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 ## Clone the project
 Create an folder,open terminal in the same folder then
 Run git clone <<http url of this project>>
+To get this url click copy button then you can copy your desied url 
 
 ## Build
 
