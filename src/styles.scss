@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.large-block {
+    height: 400px;
+    background: #dcdcdc; /* Placeholder color */
+    border-radius: 10px;
+  }
+  
+  .medium-block {
+    height: 200px;
+    background: #b0c4de; /* Placeholder color */
+    border-radius: 10px;
+  }
+  
+  .small-block {
+    height: 100px;
+    background: #778899; /* Placeholder color */
+    border-radius: 10px;
+  }
+  
+  /* Responsive Fixes */
+  @media (max-width: 768px) {
+    .large-block {
+      height: 300px;
+    }
+    .medium-block {
+      height: 150px;
+    }
+    .small-block {
+      height: 75px;
+    }
+  }
+  

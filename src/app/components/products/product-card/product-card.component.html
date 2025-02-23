@@ -1,0 +1,43 @@
+<div class="product-card">
+    <!-- Product Image -->
+    <div class="image-container">
+      <img [src]="product.image" [alt]="product.name">
+    </div>
+  
+    <!-- Product Details -->
+    <div class="product-info">
+      <h3>{{ product.name }}</h3>
+  
+      <!-- Rating -->
+      <div class="rating">
+        <span class="badge">{{ product.rating }} ⭐ reviews</span>
+      </div>
+  
+      <p class="description">
+        {{ product.description }}
+      </p>
+  
+      <!-- Pricing -->
+      <div class="pricing">
+        <span class="old-price">${{ product.oldPrice }}</span>
+        <span class="new-price">${{ product.newPrice }}</span>
+        <span class="discount">{{ product.discount }}% Off</span>
+      </div>
+  
+      <!-- Free Shipping & Seller -->
+      <div class="extra-info">
+        <span>🚚 Free shipping</span>
+        <span>🛍️ Shop this seller</span>
+      </div>
+  
+      <!-- Actions -->
+      <div class="actions">
+        <button class="view-product">View Product</button>
+        <div class="icons">
+          <i class="fas fa-heart"></i>
+          <i class="fas fa-cart-plus"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  

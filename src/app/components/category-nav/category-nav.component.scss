@@ -1,0 +1,35 @@
+.category-nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    background: white;
+    border-bottom: 1px solid #ddd;
+  
+    .category-btn {
+      background: #e4f5ff;
+      border: none;
+      border-radius: 20px;
+      padding: 10px 15px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: background 0.3s;
+  
+      &:hover {
+        background: #cceeff;
+      }
+    }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .category-nav {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  

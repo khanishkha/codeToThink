@@ -1,0 +1,23 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #03254c;
+    padding: 15px 30px;
+    color: white;
+  
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  
+    .icons i {
+      margin: 0 10px;
+      cursor: pointer;
+    }
+  }
+  

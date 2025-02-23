@@ -1,0 +1,17 @@
+<div class="category-navigation">
+    <div class="top-category">
+      <span>Top Categories</span>
+    </div>
+  
+    <div class="nav-tabs">
+      <button 
+        *ngFor="let tab of categories" 
+        class="nav-button"
+        [class.active]="tab === activeCategory" 
+        (click)="selectCategory(tab)">
+        {{ tab }}
+        <div class="underline" *ngIf="tab === activeCategory"></div>
+      </button>
+    </div>
+  </div>
+  
