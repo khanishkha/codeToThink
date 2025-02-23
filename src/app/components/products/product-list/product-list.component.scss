@@ -1,0 +1,38 @@
+.product-row {
+    display: flex;
+    flex-wrap: nowrap; /* Keeps everything in a single row */
+    gap: 20px; /* Adds spacing between cards */
+    justify-content: center; /* Ensures items are centered */
+    overflow: hidden; /* Hides overflow content */
+    padding: 20px;
+    max-width: 100%;
+  }
+  
+  /* Make sure product cards don't exceed the parent container */
+  .product-row app-product-card {
+    flex: 0 0 calc(100% / 4 - 20px); /* Adjusts to show 4 items per row */
+    max-width: calc(100% / 4 - 20px);
+  }
+  
+  /* Adjust for smaller screens */
+  @media (max-width: 1024px) {
+    .product-row app-product-card {
+      flex: 0 0 calc(100% / 3 - 20px); /* Show 3 items per row */
+      max-width: calc(100% / 3 - 20px);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .product-row app-product-card {
+      flex: 0 0 calc(100% / 2 - 20px); /* Show 2 items per row */
+      max-width: calc(100% / 2 - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-row app-product-card {
+      flex: 0 0 100%; /* Show 1 item per row */
+      max-width: 100%;
+    }
+  }
+  
