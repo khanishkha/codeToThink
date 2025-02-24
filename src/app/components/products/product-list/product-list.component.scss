@@ -1,0 +1,41 @@
+.product-row {
+  display: flex;
+  flex-wrap: nowrap; /* Keep everything in a single row */
+  gap: 10px; /* Add spacing between cards */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  scroll-snap-type: x mandatory; /* Ensures smooth scrolling */
+  padding: 20px;
+  max-width: 100%;
+  justify-content: flex-start;
+
+  /* Hide scrollbar */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Product card settings */
+  app-product-card {
+    flex: 0 0 100%; /* Only one card per view */
+    max-width: 100%;
+    scroll-snap-align: center; /* Ensures smooth snapping */
+  }
+}
+
+/* Responsive adjustments for tablets */
+@media (min-width: 768px) {
+  .product-row app-product-card {
+    flex: 0 0 50%; /* Show 2 items per row on tablets */
+    max-width: 50%;
+  }
+}
+
+/* Responsive adjustments for desktops */
+@media (min-width: 1024px) {
+  .product-row app-product-card {
+    flex: 0 0 33.33%; /* Show 3 items per row on larger screens */
+    max-width: 33.33%;
+  }
+}

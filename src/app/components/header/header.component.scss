@@ -1,0 +1,132 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+
+  .menu-icon {
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+  }
+
+  .search-container {
+    display: flex;
+    flex: 1;
+    margin: 0 20px;
+    max-width: 600px;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #e4f5ff;
+
+    .category-btn {
+      background: #03254c;
+      color: white;
+      padding: 10px;
+      border: none;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    input {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      outline: none;
+      background: #e4f5ff;
+      font-size: 14px;
+    }
+
+    .search-btn {
+      background: #03254c;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+  }
+
+  .auth-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .register-btn {
+      background: none;
+      color: #03254c;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+
+    .login-btn {
+      background: #03254c;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .search-container {
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .search-container {
+    flex: 1;
+    max-width: 100%;
+    margin: 0 10px;
+  }
+
+  .auth-buttons {
+    gap: 5px;
+
+    .register-btn {
+      display: none; // Hide register button on mobile
+    }
+
+    .login-btn {
+      padding: 8px 12px;
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .search-container {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .auth-buttons {
+    width: 100%;
+    justify-content: center;
+  }
+}

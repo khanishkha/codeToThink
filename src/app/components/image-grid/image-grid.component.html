@@ -1,0 +1,79 @@
+<div class="container">
+  <div class="row gx-2">
+
+    <!-- First Column -->
+    <div class="col-md-3 d-flex">
+      <app-image-card class="h-100 w-100"
+        [imageUrl]="'assets/bayer.jpeg'"
+        [title]="'Claritin'"
+        [subtitle]="'View More'">
+      </app-image-card>
+    </div>
+
+    <!-- Second Column with Nested Cards -->
+    <div class="col-md-3 d-flex flex-column">
+      <div class="flex-grow-1">
+        <app-image-card 
+          [imageUrl]="'assets/bayer.jpeg'"
+          [title]="'Claritin'"
+          [subtitle]="'View More'">
+        </app-image-card>
+      </div>
+      <div class="row mt-2 flex-grow-1">
+        <div class="col-6 d-flex">
+          <app-image-card 
+            [imageUrl]="'assets/bayer.jpeg'"
+            [title]="'Claritin'"
+            [subtitle]="'View More'">
+          </app-image-card>
+        </div>
+        <div class="col-6 d-flex">
+          <app-image-card 
+            [imageUrl]="'assets/bayer.jpeg'"
+            [title]="'Claritin'"
+            [subtitle]="'View More'">
+          </app-image-card>
+        </div>
+      </div>
+    </div>
+
+    <!-- Third Column -->
+    <div class="col-md-3 d-flex">
+      <app-image-card class="h-100 w-100"
+        [imageUrl]="'assets/bayer.jpeg'"
+        [title]="'Claritin'"
+        [subtitle]="'View More'">
+      </app-image-card>
+    </div>
+
+    
+    <div class="col-md-3 d-flex flex-column">
+      <div class="flex-grow-1">
+        <app-image-card class="h-100 w-100"
+          [imageUrl]="'assets/bayer.jpeg'"
+          [title]="'Claritin'"
+          [subtitle]="'View More'">
+        </app-image-card>
+      </div>
+      <div class="row mt-2 flex-grow-1">
+        <div class="col-6 d-flex">
+          <app-image-card class="h-100 w-100"
+            [imageUrl]="'assets/bayer.jpeg'"
+            [title]="'Claritin'"
+            [subtitle]="'View More'">
+          </app-image-card>
+        </div>
+        <div class="col-6 d-flex">
+          <app-image-card class="h-100 w-100"
+            [imageUrl]="'assets/bayer.jpeg'"
+            [title]="'Claritin'"
+            [subtitle]="'View More'">
+          </app-image-card>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
