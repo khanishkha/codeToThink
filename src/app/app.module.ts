@@ -8,7 +8,6 @@ import { BannerComponent } from './components/banner/banner.component';
 import { ProductListComponent } from './components/products/product-list/product-list.component';
 import { ProductCardComponent } from './components/products/product-card/product-card.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { HomeComponent } from './pages/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CategoryNavComponent } from './components/category-nav/category-nav.component';
 import { SectionHeaderComponent } from './components/section-header/section-header.component';
@@ -27,15 +26,15 @@ import { ImageGridComponent } from './components/image-grid/image-grid.component
     ProductListComponent,
     ProductCardComponent,    
     FooterComponent,
-    HomeComponent,
+    
     HeaderComponent,
     CategoryNavComponent,
     SectionHeaderComponent,
     ProductsComponent,
     CategoryNavigationComponent,
     ImageCardComponent,
-    ImageGridComponent
-  ],
+    ImageGridComponent,
+      ],
   imports: [
     BrowserModule,
     AppRoutingModule,
